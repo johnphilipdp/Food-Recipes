@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+button {
+  background: #ffbf00 !important;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  color: #000;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 150px;
+  justify-content: center;
+}
+
+button svg {
+
+  margin-right: 10px;
+  width: 31px;
+}
+
+

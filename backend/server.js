@@ -6,7 +6,7 @@ const Recipes = require('./routes/Recipes')
 
 
 dotenv.config({path: './.env'})
-const port = process.env.PORT
+const port = process.env.PORT || 8080
 
 const app = express()
 
