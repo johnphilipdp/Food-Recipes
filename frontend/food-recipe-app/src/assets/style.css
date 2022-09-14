@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 button {
   background: #ffbf00 !important;
   display: flex;
@@ -18,9 +16,13 @@ button {
 }
 
 button svg {
-
   margin-right: 10px;
   width: 31px;
 }
 
-
+input {
+  width: 300px;
+  padding: 10px 15px;
+  background: white;
+  border-bottom: 2px solid #ffbf00;
+}

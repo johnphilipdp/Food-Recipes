@@ -1,16 +1,18 @@
 <template>
   <div>
+    
     <h1 class="mt-[20px] text-2xl font-bold">
-      Edit Food 
+      Add Food 
     </h1>
-    <form @submit.prevent="editItem">
+
+    <form @submit.prevent="addItem">
       <div class="form-item">
-        <label>Edit Title</label>
-        <input v-model="food.title" type="text" placeholder="Edit Title">
+        <label>Add Title</label>
+        <input v-model="food.title" type="text" placeholder="Add Title">
       </div>
       <div class="form-item">
-        <label>Edit Description</label>
-        <input v-model="food.description" type="text" placeholder="Edit Description">
+        <label>Add Description</label>
+        <input v-model="food.description" type="text" placeholder="Add Description">
       </div>
       <button type="submit">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-floppy" width="44"
@@ -39,8 +41,8 @@
       }
     },
     methods: {
-      async editItem() {
-        await axios.put(`https://foodforthebestapi.herokuapp.com/api/recipes/${this.id}`, this.food)
+      async addItem() {
+        await axios.post(`https://foodforthebestapi.herokuapp.com/api/recipes/`, this.food)
       }
     }
   }
